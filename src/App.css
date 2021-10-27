@@ -11,13 +11,14 @@ body {
   background-color: gray;
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
 }
 h1 {
   margin: 0;
   padding: 10px 0;
   text-align: center;
 }
-.top-half {
+.top-half-container {
   background-color: darkblue;
   width: 100vw;
   height: 50vh;
@@ -54,4 +55,19 @@ h1 {
 button {
   width: 200px;
   height: 50px;
+}
+.bottom-half-container {
+  background-color: turquoise;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#usual-suspects, #everyone-else {
+  background-color: tomato;
+  border: 2px solid purple;
+  width: 80%;
+  height: 40%;
 }

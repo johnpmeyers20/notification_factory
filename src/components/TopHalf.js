@@ -4,7 +4,7 @@ import DataDropTarget from './DataDropTarget';
 
 const TopHalf = () => {
   return (
-    <div className="top-half">
+    <div className="top-half-container">
       <div className="left">
         <DataDropTarget id='data-top'/>
       </div>
