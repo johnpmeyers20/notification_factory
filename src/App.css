@@ -12,16 +12,25 @@ body {
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-columns: auto auto;
+  grid-template-areas: 
+  't t'
+  'l r'
+  'b b';
 }
 h1 {
   margin: 0;
   padding: 10px 0;
   text-align: center;
+  grid-area: t;
 }
 .top-half-container {
   background-color: darkblue;
   width: 100vw;
-  height: 50vh;
+  /* height: 50vh; */
+  grid-area: l r;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -30,12 +39,14 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-area: l;
 }
 .right {
   border: 2px solid yellow;
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-area: r;
 }
 .button-container {
   background-color: rgba(0,0,0,.7);
@@ -59,11 +70,12 @@ button {
 .bottom-half-container {
   background-color: turquoise;
   width: 100vw;
-  height: 50vh;
+  /* height: 50vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  grid-area: b;
 }
 #usual-suspects, #everyone-else {
   background-color: tomato;
