@@ -14,11 +14,10 @@ body {
   box-sizing: border-box;
   display: grid;
   grid-template-rows: auto 1fr 1fr;
-  grid-template-columns: auto auto;
   grid-template-areas: 
-  't t'
-  'l r'
-  'b b';
+  "t"
+  "m"
+  "b";
 }
 h1 {
   margin: 0;
@@ -27,14 +26,17 @@ h1 {
   grid-area: t;
 }
 .top-half-container {
-  background-color: darkblue;
+  background-color: chartreuse;
   width: 100vw;
-  /* height: 50vh; */
-  grid-area: l r;
+  grid-area: m;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'l r'
 }
+
 .left {
+  width: 100%;
+  height: 100%;
   border: 2px solid orange;
   display: flex;
   justify-content: center;
@@ -42,6 +44,8 @@ h1 {
   grid-area: l;
 }
 .right {
+  width: 100%;
+  height: 100%;
   border: 2px solid yellow;
   display: flex;
   justify-content: center;
@@ -49,7 +53,7 @@ h1 {
   grid-area: r;
 }
 .button-container {
-  background-color: rgba(0,0,0,.7);
+  background-color: brown;
   width: 75%;
   height: 75%;
   display: flex;
@@ -70,7 +74,7 @@ button {
 .bottom-half-container {
   background-color: turquoise;
   width: 100vw;
-  /* height: 50vh; */
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

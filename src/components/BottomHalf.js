@@ -3,7 +3,7 @@ import DataDropTarget from './DataDropTarget'
 
  function BottomHalf() {
   return (
-    <div class="bottom-half-container">
+    <div className="bottom-half-container">
       <DataDropTarget id="usual-suspects"/>
       <DataDropTarget id="everyone-else"/>
     </div>

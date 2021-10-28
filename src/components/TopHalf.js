@@ -6,7 +6,7 @@ const TopHalf = () => {
   return (
     <div className="top-half-container">
       <div className="left">
-        <DataDropTarget id='data-top'/>
+        <DataDropTarget id='data-top' value="Drop the lucky ones here!"/>
       </div>
       <div className="right">
         <div className='button-container'>
