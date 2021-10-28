@@ -11,13 +11,22 @@ body {
   background-color: gray;
   width: 100vw;
   height: 100vh;
+  /* border: 3px solid chartreuse; */
+}
+.content {
+  /* border: 2px solid orange; */
   box-sizing: border-box;
+  background-color: hotpink;
+  max-width: 80%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: auto 1fr 1fr;
-  grid-template-areas: 
-  "t"
-  "m"
-  "b";
+  grid-template-areas:
+    "t"
+    "m"
+    "b";
 }
 h1 {
   margin: 0;
@@ -26,35 +35,36 @@ h1 {
   grid-area: t;
 }
 .top-half-container {
-  background-color: chartreuse;
-  width: 100vw;
+  /* border: 2px solid purple; */
+  padding: 0 30px;
+  width: 100%;
   grid-area: m;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'l r'
+  grid-template-areas: "l l r";
+  box-sizing: border-box;
 }
 
 .left {
-  width: 100%;
+  /* border: 2px solid chartreuse; */
+  width: 90%;
   height: 100%;
-  border: 2px solid orange;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: l;
 }
 .right {
+  /* border: 2px solid orange; */
   width: 100%;
   height: 100%;
-  border: 2px solid yellow;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: r;
 }
 .button-container {
-  background-color: brown;
-  width: 75%;
+  width: 100%;
   height: 75%;
   display: flex;
   flex-direction: column;
@@ -62,8 +72,7 @@ h1 {
   align-items: center;
 }
 #data-top {
-  background-color: darkcyan;
-  width: 75%;
+  width: 100%;
   height: 75%;
   border: 2px solid black;
 }
@@ -72,18 +81,16 @@ button {
   height: 50px;
 }
 .bottom-half-container {
-  background-color: turquoise;
-  width: 100vw;
-  height: 50vh;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   grid-area: b;
 }
-#usual-suspects, #everyone-else {
-  background-color: tomato;
+#usual-suspects,
+#everyone-else {
   border: 2px solid purple;
-  width: 80%;
+  width: 100%;
   height: 40%;
 }
