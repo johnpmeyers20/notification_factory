@@ -1,10 +1,10 @@
 import React from 'react'
 import DataDropTarget from './DataDropTarget'
 
- function BottomHalf() {
+const BottomHalf = (props) => {
   return (
     <div className="bottom-half-container">
-      <DataDropTarget id="usual-suspects"/>
+      <DataDropTarget id="usual-suspects" data={props.data} />
       <DataDropTarget id="everyone-else"/>
     </div>
   )
