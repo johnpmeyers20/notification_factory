@@ -13,7 +13,14 @@ const DataDropTarget = (props) => {
       />) :
     null;
   return (
-    <div className="data-drop-target" data-drop-target='true' id={props.id}>
+    <div className="data-drop-target"
+      data-drop-target='true'
+      id={props.id}
+      onDragOver={props.handleOverDrop}
+      onDrop={props.handleOverDrop}
+      onDragEnter={props.handleDragEnterLeave}
+      onDragLeave={props.handleDragEnterLeave}
+      >
       {cards}
     </div>
   )

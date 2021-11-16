@@ -8,10 +8,14 @@ const BottomHalf = (props) => {
         id="usual-suspects"
         data={props.data}
         handleDragStart={props.handleDragStart}
+        handleDragEnterLeave={props.handleDragEnterLeave}
+        handleOverDrop={props.handleOverDrop}
       />
       <DataDropTarget
         id="everyone-else"
         handleDragStart={props.handleDragStart}
+        handleDragEnterLeave={props.handleDragEnterLeave}
+        handleOverDrop={props.handleOverDrop}
       />
     </div>
   )
