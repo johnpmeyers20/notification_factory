@@ -28,10 +28,10 @@ function App() {
   const handleDragEnterLeave = e => {
     if(e.type === "dragenter") {
       e.target.classList.add('drag-enter');
-      console.log(e.target.id, e.target.className);
+      // console.log(e.target.id, e.target.className);
     } else {
       e.target.classList.remove('drag-enter');
-      console.log(e.target.id, e.target.className)
+      // console.log(e.target.id, e.target.className)
     }
   }
   const handleOverDrop = e => {
