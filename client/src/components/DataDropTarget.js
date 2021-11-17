@@ -11,7 +11,7 @@ const DataDropTarget = (props) => {
         key={idGen(i.name)}
         handleDragStart={props.handleDragStart}
       />) :
-    null;
+    "Loading...";
   return (
     <div className="data-drop-target"
       data-drop-target='true'
