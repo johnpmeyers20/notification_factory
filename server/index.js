@@ -8,7 +8,18 @@ const app = express();
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 app.get("/api", (req, res) => {
-  res.json({ message: "Hello from server!" });
+  res.json(data = [
+    {
+      name: 'Anna',
+      telephone: '9173455445',
+      email: 'john.meyers@mfa.gov.hu'
+    },
+    {
+      name: 'Dzsoni',
+      telephone: '3476965676',
+      email: 'johnpmeyers20@yahoo.com'
+    }
+  ]);
 });
 
 app.get('*', (req, res) => {
