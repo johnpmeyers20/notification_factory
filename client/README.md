@@ -18,3 +18,5 @@ You can drag ee names into the dropbox and then hit one of the buttons to send a
 
   - when someone is pulled from employees to currList for example and an email is sent, the employees frequency attribute should be updated (incremented by 1).
   - the usualSuspects array should be composed of the top 10 employees according to frequency
+
+- Add a page where you can add employees (go full crud)

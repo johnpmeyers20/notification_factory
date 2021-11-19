@@ -4,19 +4,6 @@ import TopHalf from './components/TopHalf';
 import BottomHalf from './components/BottomHalf';
 import React from 'react';
 
-// const data = [
-//   {
-//     name: 'Anna',
-//     telephone: '9173455445',
-//     email: 'john.meyers@mfa.gov.hu'
-//   },
-//   {
-//     name: 'Dzsoni',
-//     telephone: '3476965676',
-//     email: 'johnpmeyers20@yahoo.com'
-//   }
-// ];
-
 function App() {
   //new code for backend below
   const [data, setData] = React.useState(null);
@@ -24,7 +11,7 @@ function App() {
   React.useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
-      .then((data) => setData(data));
+      .then((i) => setData(i.data));
   }, []);
 
   //new code for backend above
